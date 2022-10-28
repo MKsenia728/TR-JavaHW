@@ -4,9 +4,9 @@ public class Main {
 
     public static int counterFor(int numberOfFloors, int floorUp, int floorDown) {
         int counter = 0;
-        for (int i = 0; i < numberOfFloors; i = i + floorUp) {
+        for (int i = 0; i < numberOfFloors; i = i - floorDown) {
             counter++;
-            i = i - floorDown;
+            i = i + floorUp;
         }
         return counter;
     }
